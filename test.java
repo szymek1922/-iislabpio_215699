@@ -37,3 +37,14 @@ class Temperature {
 package pckg.pl;
 // correct
 package pl.samouczekprogramisty.kursjava.loops;
+
+// incorrect
+boolean parameter = // ...
+if (parameter == true) {
+    // ...
+}
+// correct
+boolean parameter = // ...
+if (parameter) {
+    // ...
+}
