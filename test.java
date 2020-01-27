@@ -58,3 +58,30 @@ else {
 }
 // correct
 return !parameter;
+
+
+// incorrect
+class MagicNumber {
+    private int value;
+
+    public boolean isEven() {
+        return value % 2 == 0;
+    }
+
+    public boolean isOdd() {
+        return value % 2 == 1;
+    }
+}
+// correct
+class MagicNumber {
+    private int value;
+
+    public boolean isEven() {
+        return value % 2 == 0;
+    }
+
+    public boolean isOdd() {
+        return !isEven();
+    }
+}
+
