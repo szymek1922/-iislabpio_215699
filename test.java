@@ -85,3 +85,26 @@ class MagicNumber {
     }
 }
 
+// incorrect
+class User {
+    String login() {
+        try {
+            callingExternalServiceToLogin();
+        }
+        catch (LoginException e) {
+            // handling exception
+        }
+        return "logged in";
+    }
+}
+// correct
+class User {
+    void login() {
+        try {
+            callingExternalServiceToLogin();
+        }
+        catch (LoginException e) {
+            // handling exception
+        }
+    }
+}
