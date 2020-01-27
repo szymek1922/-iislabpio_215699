@@ -102,3 +102,18 @@ class UserInput {
         return scanner.next();
     }
 }
+
+
+// incorrect
+double someVeryImportantCalculation(double argument0, double argument1) {
+    return argument0 + sqrt(argument1);
+}
+
+double sqrt(double argument) {
+    return Math.sqrt(argument);
+}
+
+// correct
+double someVeryImportantCalculation(double argument0, double argument1) {
+    return argument0 + Math.sqrt(argument1);
+}
