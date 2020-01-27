@@ -27,3 +27,8 @@ class CodeExecutor {
         // ...
     }
 }
+
+// correct
+class Temperature {
+    public static final double BOILING_WATER_CELSIUS = 100;
+}
