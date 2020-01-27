@@ -32,3 +32,8 @@ class CodeExecutor {
 class Temperature {
     public static final double BOILING_WATER_CELSIUS = 100;
 }
+
+// incorrect
+package pckg.pl;
+// correct
+package pl.samouczekprogramisty.kursjava.loops;
