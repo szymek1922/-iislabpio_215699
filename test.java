@@ -48,3 +48,13 @@ boolean parameter = // ...
 if (parameter) {
     // ...
 }
+
+// incorrect
+if (parameter == true) {
+    return false;
+}
+else {
+    return true;
+}
+// correct
+return !parameter;
