@@ -117,3 +117,10 @@ double sqrt(double argument) {
 double someVeryImportantCalculation(double argument0, double argument1) {
     return argument0 + Math.sqrt(argument1);
 }
+
+
+// incorrect
+import static java.lang.Math.*;
+// correct
+import static java.lang.Math.sqrt;
+import static java.lang.Math.pow;
