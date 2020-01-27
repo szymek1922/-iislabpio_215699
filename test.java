@@ -17,3 +17,13 @@ interface PageCollector {
 
 enum URLSchema {
 }
+
+// correct
+class CodeExecutor {
+    String snippet;
+    int returnCode;
+
+    Future<Integer> executeAsynchronously() {
+        // ...
+    }
+}
