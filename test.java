@@ -86,25 +86,19 @@ class MagicNumber {
 }
 
 // incorrect
-class User {
-    String login() {
-        try {
-            callingExternalServiceToLogin();
-        }
-        catch (LoginException e) {
-            // handling exception
-        }
-        return "logged in";
+class UserInput {
+    public String get(String prompt) {
+        System.out.println(prompt);
+        Scanner scanner = new Scanner(System.in);
+        return scanner.next();
     }
 }
 // correct
-class User {
-    void login() {
-        try {
-            callingExternalServiceToLogin();
-        }
-        catch (LoginException e) {
-            // handling exception
-        }
+class UserInput {
+    private Scanner scanner = new Scanner(System.in);
+
+    public String get(String prompt) {
+        System.out.println(prompt);
+        return scanner.next();
     }
 }
